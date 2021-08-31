@@ -1,0 +1,62 @@
+body {
+    height: 100%;
+    background-color: #e6ecf0;
+}
+
+.wrapper {
+    width: 50%;
+    height: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.post-box {
+    background-color: #2695e0;
+    text-align: center;
+}
+
+.post-box > input {
+    margin: 1rem;      /*rem   html要素に対して相対的にフォントサイズの指定が可能*/
+    padding: 0 1rem;
+    width: 70%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    height: 2.3rem;
+}
+
+.submit {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: none;
+}
+
+.tweet-box {
+    padding: 2rem;
+    border-top: solid 1px #e6ecf0;
+    border-bottom: solid 1px #e6ecf0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tweet-box > div {
+    width: 40%;
+}
+
+.tweet-box> img {
+    width: 50%;
+    border: 1px solid black;
+    margin-right: 30px;
+}
+
+.destroy-btn {
+    text-align: right;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

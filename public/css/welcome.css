@@ -1,0 +1,71 @@
+.content {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/top-view2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /* ぼかしを付けるための処理 */
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/*ぼかしの処理*/
+.content::before {
+    content: '';
+    background: inherit;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 150px 0;
+    letter-spacing: 10px;
+}
+
+.main-container > h1 {
+    font-size: 42px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.main-container > h2 {
+    font-size: 28px;
+    text-align: left;
+}
+
+.left-btn {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 30px;
+    width: 300px;
+    font-size: 1.1rem;
+    padding: 16px 0;
+    border: 1px solid orange;
+    display: inline-block;
+    color: white;
+}
+
+.right-btn {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 30px;
+    width: 300px;
+    font-size: 1.1rem;
+    padding: 16px 0;
+    border: 1px solid orange;
+    display: inline-block;
+    color: white;
+}
