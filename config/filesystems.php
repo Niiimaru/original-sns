@@ -59,7 +59,7 @@ return [
             'driver' => 's3',
             'key' => 'AKIAWGJDIRA5OCS4QFDJ',
             'secret' => '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',
-            'region' => ap-northeast-1,
+            'region' => 'ap-northeast-1',
             'bucket' => 'original-sns',
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
